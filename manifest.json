@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "QR Share By Simple Compiler",
+  "version": "1.0",
+  "description": "随时随地扫描网站二维码",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["qrcode.min.js", "content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "web_accessible_resources": [
+    {
+      "resources": ["qrcode.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+#qr-code-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10000;
+  border: 2px solid white; /* 添加白色边框 */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* 添加阴影效果 */
+}
+
+#qr-code-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #FF69B4; /* 改为粉色 */
+  stroke: white; /* 将描边改为白色，以增加对比度 */
+  stroke-width: 20; /* 增加描边宽度 */
+  stroke-linejoin: round; /* 使拐角更圆滑 */
+  stroke-linecap: round; /* 使线段端点更圆滑 */
+}
+
+#qr-code-container {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 9999;
+  width: 150px;
+  text-align: center;
+  display: none;
+}
+
+#qr-code {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#favicon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#site-name {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
